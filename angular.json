@@ -26,7 +26,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
+            "styles": ["./node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "./node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -89,7 +90,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
+            "styles": ["./node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "./node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a312c494-9bfc-40e5-b2c7-533bf8bddc5d"
   }
 }

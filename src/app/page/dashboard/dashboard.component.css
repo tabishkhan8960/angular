@@ -1,0 +1,22 @@
+.custom-bg {
+    background-color: black;
+    color: white;
+  }
+  
+  .custom-bg .card {
+    background-color: #333; /* Dark background for cards */
+  }
+  
+  .custom-bg .card-header, 
+  .custom-bg .card-body {
+    color: white; /* Ensure text inside cards is visible */
+  }
+  
+  .custom-bg h3 {
+    color: white; /* Ensure header text is white */
+  }
+  
+  .custom-bg p, .custom-bg ul {
+    color: white; /* Ensure all text inside cards is white */
+  }
+  
