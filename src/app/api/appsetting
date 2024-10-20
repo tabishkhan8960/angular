@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DevConnection": "Server=DESKTOP-6NT0FFD\\SQLEXPRESS01;Database=DubaiDB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;"
+  }
+}
