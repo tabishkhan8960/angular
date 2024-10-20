@@ -1,0 +1,22 @@
+ [HttpPost("login")]
+        public async Task<ActionResult<bool>> Login([FromBody] LoginDTO loginDto)
+        {
+            if (_context.Users == null)
+            {
+                return NotFound("No users available in the database.");
+            }
+
+            // Check if the user exists with the provided username and password
+            var user = await _context.Users
+                                     .Where(u => u.UserName == loginDto.UserName && u.Password == loginDto.Password)
+                                     .FirstOrDefaultAsync();
+
+            if (user != null)
+            {
+                return Ok(true);  // Login successful
+            }
+            else
+            {
+                return Ok(false); // Login failed
+            }
+        }

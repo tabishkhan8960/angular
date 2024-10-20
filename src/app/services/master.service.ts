@@ -34,6 +34,6 @@ export class MasterService {
     return this.http.get<GetDashboard>(this.apiUrl + "GetDashboard")
   }
   getcustomer(): Observable<customer[]>{
-    return this.http.get<customer[]>("http://localhost:5155/api/Customers")
+    return this.http.get<customer[]>("https://localhost:7101/api/CustomerDetails")
   }
 }
